@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    margin: 0 auto;
+}
+
+body{
+    background: linear-gradient(#778F99, #c5a896);
+    color: black;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+@media only screen and (max-width: 1960px) {
+
+    
+    .navbar{
+        margin: 0px;
+        padding: 0px;
+
+        background-color: #c6c2c267;
+    }
+    
+    .container-fluid{
+        margin-left: 1%;
+    }
+
+    .gradient-navbar{
+        background-image: linear-gradient(90deg,  #83486a00, #66387900);
+    }
+
+    .navbar-title img{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+
+    .navbar-title a{
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 30px;
+        color: #2A2122;
+        margin-top: 0.5%;
+        margin-left: 1%;
+        text-decoration: none;
+        font-weight: 700;
+        position: absolute;
+    }
+
+    .gradient-text{
+    
+        /* Create the gradient. */
+
+        /*
+        background-image: linear-gradient(45deg,  #2b3044, #8eb8ca);
+        */ 
+
+        /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: repeat;
+    
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        background-clip: text;
+        -moz-text-fill-color: transparent; 
+    }
+    
+    ul{
+        margin-right: 0%;
+        margin-top: 1.6%;
+    }
+
+    li{
+        padding-right: 30px;
+        padding-bottom: 5%;
+    }
+
+    li a{
+        position: relative;
+        text-decoration: none;
+        font-family: 'Comfortaa', sans-serif;
+        color: #2A2122;
+        letter-spacing: 0.5px;
+        font-size: 21px;
+        font-weight: 300;
+        padding: 0 10px;
+    }
+
+    li a:after{     
+        content: "";
+        position: absolute;
+        background-color: #344b5e;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -6px;
+        transition: 0.3s;
+    }
+
+    li .active{
+        color: #564134;
+    }
+
+    li .active:after{
+        content: "";
+        position: absolute;
+        background-color: #344b5e;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: -6px;
+        transition: 0.3s;
+    }
+
+    li a:hover{
+        color: #6c4f3d;
+    }
+
+    li a:hover:after{
+        width: 100%;
+    }
+
+    .bannerz h1{
+        color:#2A2122;
+
+        font-size: 65px;
+        font-weight: bold;
+
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        padding-top: 3%;
+        text-align: center;
+    }
+
+    .slaycourses h1{
+        color:#2A2122;
+
+        font-size: 30px;
+        font-weight: bold;
+
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        padding-left: 8.5%;
+        padding-top: 3%;
+    }
+
+    .background-card{
+        padding-top: 1%;
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-bottom: 1%;
+    }
+
+    .card .card-body {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .cb3{
+        background-color: #77838495;
+    }
+
+    .row{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .card{        
+        width: 100%;
+        max-width: 2000px;
+        padding: 1rem;
+        padding-bottom: 0.5rem;
+
+        border-radius: 15px;
+        border: 1px solid transparent;
+    }
+
+    .card-title{
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 25px;
+        color: #372b22;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 15px;
+        text-align: left;
+        text-decoration: none;
+        float: left;
+    }
+
+    .cb1, .cb2{
+        background-color: #c6c2c2af;
+    }
+
+    .btn{
+        color: black;
+        border-color: black;
+        border-radius: 0.5rem;
+        text-align: left;
+        float: left;
+    }
+
+    .btn:hover{
+        border-color: #55618dd3;
+        background-color: #55618dd3;
+        box-shadow: 0 0.3rem 1rem #24293cd3;
+        transition: ease 0.6s;
+    }
+
+    #icon1{
+        position:absolute;
+        top: 52px; left: 28px;
+    }
+
+    #icon2{
+        position: absolute;
+        top: 100px; left: -177px;
+    }
+
+    #icon3{
+        position:absolute;
+        top: 140px; left: -177px
+    }
+
+    #icon4{
+        position:absolute;
+        top: 68px; left: -120px
+    }
+
+    #icon5{
+        position:absolute;
+        top: 130px; left: -120px
+    }
+
+    #icon6{
+        position:absolute;
+        top: 180px; left: -120px
+    }
+
+    #icon7{
+        position:absolute;
+        top: 47px; left: -160px
+    }
+
+    #icon8{
+        position:absolute;
+        top: 115px; left: -160px
+    }
+
+    #Announcements{
+        text-align: left;
+    }
+
+    #Slides p{
+        text-decoration: none;
+        color: black;
+        text-decoration: underline 1px solid black;
+        text-align: left;
+        margin-left: 5%;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 2%;
+        padding-top: 2%;
+    }
+
+    #Activities p{
+        text-decoration: none;
+        color: black;
+        text-decoration: underline 1px solid black;
+        text-align: left;
+        margin-left: 3%;
+        margin: 0;
+        padding: 0;
+        margin-right: 0;
+        padding-right: 0;
+        padding-bottom: 2%;
+        padding-top: 2%;
+    }
+
+    #Quizzes p{
+        text-decoration: none;
+        color: black;
+        text-decoration: underline 1px solid black;
+        text-align: left;
+        margin-left: 3%;
+        margin: 0;
+        padding: 0;
+        margin-right: 0;
+        padding-right: 0;
+        padding-bottom: 2%;
+        padding-top: 2%;
+
+    }
+
+    .bannerz img{
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        width: 90%;
+        border-radius: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .navbar-collapse ul{
+        margin-left: 3%;
+    }
+
+    .navbar-title{
+        margin-left: -10px;
+    }
+
+    .navbar-title a{
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 30px;
+        color: #2A2122;
+        margin-top: 0.1%;
+        text-decoration: none;
+        font-weight: 700;
+        position: absolute;
+        padding-top: 9px;
+    }
+}
+
+@media only screen and (max-width: 384) {
+
+    .navbar-collapse ul{
+        margin-left: 3%;
+    }
+
+    .navbar-title img, a{
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+}
+
+/*
+@media only screen and (max-width: 990px) {
+
+    .container-fluid{
+        margin-right: 21%;
+    }
+
+    .navbar-collapse ul{
+        margin-top: 6%;
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+
+    .navbar-brand{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-title a {
+        margin-top: 3%;
+    }
+
+    .container-fluid{
+        margin-right: 8%;
+    }
+
+    .navbar-collapse ul{
+        margin-top: 6%;
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+
+    .navbar-brand{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-title a {
+        margin-top: 3%;
+    }
+
+    .container-fluid{
+        margin-right: 16%;
+    }
+
+    .navbar-collapse ul{
+        margin-top: 6%;
+        margin-left: 25%;
+    }
+    
+}
+
+@media only screen and (max-width: 380px) {
+
+    .navbar-brand{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-title a {
+        margin-top: 3%;
+    }
+
+    .container-fluid{
+        margin-right: 10%;
+    }
+
+    .navbar-collapse ul{
+        margin-top: 6%;
+        margin-left: 25%;
+    }
+    
+}
+*/

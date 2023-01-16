@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    margin: 0 auto;
+}
+
+body{
+    background: linear-gradient(rgb(98, 123, 132), #c5a896);
+    color: black;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+@media only screen and (max-width: 1960px) {
+
+
+    .list li{
+        padding: 0.5%;
+        margin: 0;
+    }
+
+    .start{
+        margin-top: 3.5%;
+    }
+    
+    .background-card{
+        padding-top: 1%;
+        padding-left: 2%;
+        padding-right:7%;
+        padding-bottom: 2%;
+        margin-top: 3%;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 4%;
+        background-color: #c6c2c23f;
+        border-radius: 20px;
+    }
+
+    h6{
+        margin-left: 1%;
+    }
+    
+    .navbar{
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #c6c2c23f;
+    }
+
+    .container-fluid{
+        margin-left: 1%;
+    }
+
+    .gradient-navbar{
+        background-image: linear-gradient(90deg,  #83486a00, #66387900);
+    }
+
+    .navbar-title img{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+    }
+
+    .navbar-title a{
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 30px;
+        color: #2A2122;
+        margin-top: 0.5%;
+        margin-left: 1%;
+        text-decoration: none;
+        font-weight: 700;
+        position: absolute;
+    }
+
+    .gradient-text{
+
+        /* Create the gradient. */
+
+        /*
+        background-image: linear-gradient(45deg,  #2b3044, #8eb8ca);
+        */ 
+
+        /* Set the background size and repeat properties. */
+        background-size: 100%;
+        background-repeat: repeat;
+
+        /* Use the text as a mask for the background. */
+        /* This will show the gradient as a text color rather than element bg. */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        background-clip: text;
+        -moz-text-fill-color: transparent; 
+    }
+
+    ul{
+        margin-right: 0%;
+        margin-top: 1.6%;
+    }
+
+    li{
+        padding-right: 30px;
+        padding-bottom: 5%;
+    }
+
+    li a{
+        position: relative;
+        text-decoration: none;
+        font-family: 'Comfortaa', sans-serif;
+        color: #2A2122;
+        letter-spacing: 0.5px;
+        font-size: 21px;
+        font-weight: 300;
+        padding: 0 10px;
+    }
+
+    li a:after{     
+        content: "";
+        position: absolute;
+        background-color: #344b5e;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -6px;
+        transition: 0.3s;
+    }
+
+    li .active{
+        color: #372a21;
+    }
+
+    li .active:after{
+        content: "";
+        position: absolute;
+        background-color: #344b5e;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        bottom: -6px;
+        transition: 0.3s;
+    }
+
+    li a:hover{
+        color: #6c4f3d;
+    }
+
+    li a:hover:after{
+        width: 100%;
+    }
+
+    .aa a button{
+        margin-left: -1.3%;
+        margin-top: 2%;
+    }
+
+    .quiz a button{
+        margin-left: -0.7%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .navbar-collapse ul{
+        margin-left: 3%;
+    }
+
+    .navbar-title{
+        margin-left: -10px;
+    }
+
+    .navbar-title a{
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 30px;
+        color: #2A2122;
+        margin-top: 0.1%;
+        text-decoration: none;
+        font-weight: 700;
+        position: absolute;
+        padding-top: 9px;
+    }
+
+    .submit .file{
+        font-size: 13px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 384) {
+
+
+    .navbar-collapse ul{
+        margin-left: 3%;
+    }
+
+    .navbar-title img, a{
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+}
