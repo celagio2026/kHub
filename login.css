@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-image: url(https://lh3.googleusercontent.com/U2ICY72ZWjKyXeP4O3yRzudwlK-HC-vy-ZVNHqlU_jDCklNHOpf6tZ8h7_P0f36ihZI_CvIJIL-dtdFamHf8Gw6DtoFjiZN8wqbKJnnGzK9qCgpFsIc-IanA2uHHYg8Sf9leo-Olrg=w2400);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+
+    color: black;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+@media only screen and (max-width: 1960px) {
+
+    .show-btn{
+        background: #fff;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #3498db;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    }
+
+    .show-btn {
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(170, 190, 197, 0.671);
+        border-radius: 15px;
+        border: 1px solid rgb(68, 104, 117);
+        padding: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+}
+
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+
+    .container{
+        display: none;
+        background: rgb(93, 138, 153);
+        width: 410px;
+        padding: 30px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #show:checked ~ .container{
+        display: block;
+    }
+    .container .close-btn{
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .container .close-btn:hover{
+        color: 33498db;
+    }
+
+    .container .text{
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .container form{
+        margin-top: 0px;
+    }
+
+    .container form .data{
+        height: 45px;
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    form .data label{
+        font-size: 18px;
+    }
+
+    form .data input{
+        height: 100%;
+        width: 100%;
+        padding-left: 10px;
+        font-size: 17px;
+        border: 1px solid silver;
+    }
+
+    form .data input:focus{
+        border-color: #3498db;
+        border-bottom-width: 2px;
+    }
+
+    form .forgot-pass{
+        margin-top: -8px;
+    }
+
+    form .forgot-pass a {
+        color:  #9f01ea;
+        text-decoration: none;
+        font-weight: 1000;
+    }
+
+    form .forgot-pass a:hover{
+        text-decoration: underline;
+    }
+
+    form .btn{
+        margin: 30px 0;
+        height: 45px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    form .btn .inner{
+        height: 100%;
+        width: 300%;
+        position: absolute;
+        left: -100%;
+        z-index: -1;
+        background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+        transition: all 0.4s;
+    }
+
+    form .btn:hover .inner{
+        left: 0;
+    }
+
+    form .btn button{
+        height: 100%;
+        width: 100%;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    form .signup-link {
+        text-align: center;
+    }
+
+    form .signup-link a{
+        color:  #9f01ea;
+        text-decoration: none;
+        font-weight: 1000;
+    }
+
+    form .signup-link a:hover{
+        text-decoration: underline;
+    }
+
+
+    .card-title h1{
+        color:#2A2122;
+
+        font-size: 90px;
+        font-weight: 500;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+    }
+
+    .card-title p{
+        font-size: 28px;
+        margin-bottom: 35px;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: center;
+    }
+
+    .card-title h6{
+        font-size: 22px;
+    }
+
+    .card-title h1, h6, p, a{
+        text-align: center;
+    }
+
+    .card .card-body {
+        margin-left: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .row{
+        margin: 0;
+        padding: 0;
+        
+    }
+        
+    .card{
+        width: 100%;
+        max-width: 1000px;
+        padding: 1rem;
+        padding-bottom: 0.5rem;
+
+        border-radius: 80px;
+        border: 1px solid transparent;
+
+        backdrop-filter: blur(1rem);
+        box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+        border-top-color: rgba(225, 225, 225, 0.5);
+        border-left-color: rgba(225, 225, 225, 0.5);
+        border-bottom-color: rgba(225, 225, 225, 0.1);
+        border-right-color: rgba(225, 225, 225, 0.1);
+    }
+
+    .cb1{
+        background-color: rgba(75, 105, 139, 0.349);
+    }
+
+    .col-md-12{
+        margin-top: 12.2%;
+    }
+
+    .card-title .btn{
+        background-color: rgba(170, 190, 197, 0.671);
+        border-radius: 15px;
+        border: 1px solid rgb(68, 104, 117);
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .card-title .btn:hover{
+        border-color: rgb(71, 89, 95);
+        background-color: rgb(98, 123, 132);
+        box-shadow: 0 0.3rem 1rem rgb(52, 65, 70);
+        transition: ease 0.6s;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .card-title h1{
+        color:#2A2122;
+
+        font-size: 65px;
+        font-weight: 1000;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+    }
+
+    .card-title p{
+        font-size: 23px;
+        margin-bottom: 35px;
+        margin-top: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .col-md-12{
+        margin-top: 35%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .card{
+        border-radius: 55px;
+    }
+
+    .card-title a{
+        font-size: 18px;
+    }
+
+    .card-title .btn{
+        padding: 2%;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+}
+
+
+@media only screen and (max-width: 384px) {
+    .card-title h1{
+        color:#2A2122;
+
+        font-size: 55px;
+        font-weight: 1000;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+    }
+
+    .card-title p{
+        font-size: 20px;
+        margin-bottom: 35px;
+        margin-top: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .col-md-12{
+        margin-top: 26.5%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .card{
+        border-radius: 55px;
+    }
+
+    .card-title a{
+        font-size: 18px;
+    }
+
+    .card-title .btn{
+        padding: 4%;
+    }
+}
+
+/*
+@media only screen and (max-width: 990px) {
+
+    .container-fluid{
+        margin-right: 21%;
+    }
+
+    .navbar-collapse ul{
+        margin-top: 6%;
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+
+    .navbar-brand{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-title a {
+        margin-top: 3%;
+    }
+
+    .container-fluid{
+        margin-right: 8%;
+    }
+
+    .navbar-collapse ul{
+        margin-top: 6%;
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+
+    .navbar-brand{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-title a {
+        margin-top: 3%;
+    }
+
+    .container-fluid{
+        margin-right: 16%;
+    }
+
+    .navbar-collapse ul{
+        margin-top: 6%;
+        margin-left: 25%;
+    }
+    
+}
+
+@media only screen and (max-width: 380px) {
+
+    .navbar-brand{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-title a {
+        margin-top: 3%;
+    }
+
+    .container-fluid{
+        margin-right: 10%;
+    }
+
+    .navbar-collapse ul{
+        margin-top: 6%;
+        margin-left: 25%;
+    }
+    
+}
+*/
